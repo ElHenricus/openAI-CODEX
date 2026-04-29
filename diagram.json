@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Codex (inferred from provided source code)",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad", "top": -160, "left": 260, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -220, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": -190, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led3", "top": -160, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led4", "top": -130, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led5", "top": -100, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led6", "top": -70, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led7", "top": -40, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led8", "top": -10, "left": -220, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led9", "top": 20, "left": -220, "attrs": { "color": "blue" } },
+    { "type": "wokwi-led", "id": "led10", "top": 50, "left": -220, "attrs": { "color": "blue" } },
+    { "type": "wokwi-led", "id": "led11", "top": 80, "left": -220, "attrs": { "color": "blue" } },
+    { "type": "wokwi-led", "id": "led12", "top": 110, "left": -220, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    ["pico:GP11", "led1:A", "green"], ["pico:GND.1", "led1:C", "black"],
+    ["pico:GP10", "led2:A", "green"], ["pico:GND.1", "led2:C", "black"],
+    ["pico:GP9", "led3:A", "green"], ["pico:GND.1", "led3:C", "black"],
+    ["pico:GP8", "led4:A", "green"], ["pico:GND.1", "led4:C", "black"],
+    ["pico:GP7", "led5:A", "green"], ["pico:GND.1", "led5:C", "black"],
+    ["pico:GP6", "led6:A", "green"], ["pico:GND.1", "led6:C", "black"],
+    ["pico:GP5", "led7:A", "green"], ["pico:GND.1", "led7:C", "black"],
+    ["pico:GP4", "led8:A", "green"], ["pico:GND.1", "led8:C", "black"],
+    ["pico:GP3", "led9:A", "green"], ["pico:GND.1", "led9:C", "black"],
+    ["pico:GP2", "led10:A", "green"], ["pico:GND.1", "led10:C", "black"],
+    ["pico:GP28", "led11:A", "green"], ["pico:GND.1", "led11:C", "black"],
+    ["pico:GP27", "led12:A", "green"], ["pico:GND.1", "led12:C", "black"],
+
+    ["pico:GP26", "keypad:R1", "orange"],
+    ["pico:GP22", "keypad:R2", "orange"],
+    ["pico:GP21", "keypad:R3", "orange"],
+    ["pico:GP20", "keypad:R4", "orange"],
+
+    ["pico:GP19", "keypad:C1", "purple"],
+    ["pico:GP18", "keypad:C2", "purple"],
+    ["pico:GP17", "keypad:C3", "purple"],
+    ["pico:GP16", "keypad:C4", "purple"]
+  ]
+}
